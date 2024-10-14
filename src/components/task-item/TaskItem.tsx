@@ -82,9 +82,9 @@ function TaskItem({ cd, title, category, status, desc }: TaskItemProps) {
           {/* Title + Tags */}
           <div>
             {/* Mostrar ID da Tarefa (Para motivo de testes) */}
-            {/* <span className="inline-block translate-y-[-5px] text-xs text-gray-400">
+            <span className="inline-block translate-y-[-5px] text-xs text-gray-400">
               #{cd}
-            </span> */}
+            </span>
             <TaskTitle
               onClick={checkTask}
               title={title}
