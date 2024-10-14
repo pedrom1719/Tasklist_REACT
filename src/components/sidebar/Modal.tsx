@@ -23,9 +23,11 @@ function Modal(this: unknown, { active, onClose }: ModalProps) {
     const inputTitle = form.elements[0] as HTMLInputElement;
     const inputDesc = form.elements[1] as HTMLInputElement;
     const inputCategory = form.elements[2] as HTMLInputElement;
-    const inputCD = listTask.length;
+    let inputCD = listTask.length;
 
-    console.log(inputCD);
+    if (listTask.find((index) => index.cd === inputCD)) {
+      inputCD += 1;
+    }
 
     dispatch(
       insertTask({
