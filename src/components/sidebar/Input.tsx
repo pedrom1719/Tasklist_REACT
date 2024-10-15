@@ -13,7 +13,7 @@ function Input({ placeholder, attributes, onChange, value }: InputProps) {
         placeholder={placeholder}
         onChange={onChange}
         value={value}
-        className={`block w-full rounded border-x-4 border-transparent p-2 text-sm outline-none transition-all hover:border-r-gray-200 focus:border-r-violet-500 ${attributes}`}
+        className={`block w-full rounded border-x-4 border-transparent p-3 text-sm outline-none transition-all hover:border-r-gray-200 focus:border-r-violet-500 ${attributes}`}
       />
     </>
   );
