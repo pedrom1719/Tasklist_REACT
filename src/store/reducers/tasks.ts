@@ -9,7 +9,7 @@ const initialState: TaskState = {
   listTask: [
     {
       cd: 0,
-      title: "Teste novo",
+      title: "Ir para academia",
       category: "Normal",
       status: "Pendente",
       desc: "Dia de Perna",

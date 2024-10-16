@@ -46,7 +46,7 @@ function Modal(this: unknown, { active, onClose }: ModalProps) {
   return (
     <>
       <div
-        className={` ${active ? "pointer-events-auto bg-gradient-to-b from-gray-600/40 to-gray-600/70 backdrop-blur-[2px]" : "pointer-events-none bg-gray-600/0"} absolute z-10 m-[-12px] flex h-full w-full items-center justify-center transition-all`}
+        className={` ${active ? "pointer-events-auto bg-gradient-to-b from-gray-600/40 to-gray-600/70 backdrop-blur-[2px]" : "pointer-events-none bg-gray-600/0"} absolute left-0 top-0 z-10 m-0 flex h-full w-screen items-center justify-center transition-all`}
       >
         <div
           className={` ${active ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none translate-y-[-40%] opacity-0"} relative flex min-h-[40vh] w-[55vh] max-w-[90%] flex-col justify-between rounded-2xl bg-gray-100 p-3 shadow-lg transition-transform`}
