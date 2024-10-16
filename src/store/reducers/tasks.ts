@@ -28,6 +28,20 @@ const initialState: TaskState = {
       status: "Pendente",
       desc: "Comprar sal",
     },
+    {
+      cd: 3,
+      title: "Cortar cabelo",
+      category: "Urgente",
+      status: "Concluida",
+      desc: "#Nevou",
+    },
+    {
+      cd: 4,
+      title: "Fazer compras",
+      category: "Importante",
+      status: "Pendente",
+      desc: "Comprar sal",
+    },
   ],
 };
 

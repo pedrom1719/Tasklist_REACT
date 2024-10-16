@@ -33,7 +33,7 @@ function Sidebar() {
 
   return (
     <>
-      <aside className="xs:absolute flex h-full w-80 flex-col justify-between rounded-lg bg-gray-100 p-3">
+      <aside className="flex h-full w-80 flex-col justify-between rounded-lg bg-gray-100 p-3 sm:hidden">
         <div>
           <Input
             placeholder="Buscar"

@@ -45,7 +45,7 @@ function Content() {
 
   return (
     <>
-      <main className="flex h-full w-full flex-col justify-between rounded-lg border-2 border-gray-50 p-3">
+      <main className="flex h-full w-full flex-col justify-between rounded-lg border-2 border-gray-50 p-3 sm:h-[calc(100vh-56px)]">
         <div className="h-full space-y-3 overflow-y-auto">
           {taskFilter().map((taskIndex) => (
             <div key={taskIndex.cd}>
