@@ -75,14 +75,14 @@ function TaskItem({ cd, title, category, status, desc }: TaskItemProps) {
     <>
       {/* Main Content */}
       <div
-        className={` ${status === "Concluida" ? "grayscale" : ""} block w-full rounded-lg bg-gray-100 p-4 transition-all hover:bg-gray-200/60`}
+        className={` ${status === "Concluida" ? "opacity-50 grayscale" : ""} block w-full rounded-lg bg-gray-100 p-4 transition-all hover:bg-gray-200/60`}
       >
         {/* TitleContainer */}
-        <div className="flex items-start justify-between gap-1 border-b-2 border-gray-200 pb-4">
+        <div className="flex items-start justify-between gap-1 border-b-2 border-gray-200 pb-4 sm:flex-col-reverse sm:gap-y-3">
           {/* Title + Tags */}
           <div>
             {/* Mostrar ID da Tarefa (Para motivo de testes) */}
-            <span className="inline-block translate-y-[-5px] text-xs text-gray-400">
+            <span className="inline-block translate-y-[-5px] text-xs text-gray-400 sm:hidden">
               #{cd}
             </span>
             <TaskTitle
@@ -103,11 +103,11 @@ function TaskItem({ cd, title, category, status, desc }: TaskItemProps) {
               <div className="flex gap-2">
                 <Check
                   onClick={confirmEdit}
-                  className="h-7 w-7 cursor-pointer rounded bg-gray-200 p-[7px] text-emerald-500 transition-all hover:bg-emerald-500 hover:text-white"
+                  className="h-7 w-7 cursor-pointer rounded bg-gray-200 p-[7px] text-emerald-500 transition-all hover:bg-emerald-500 hover:text-white sm:h-8 sm:w-8"
                 />
                 <X
                   onClick={cancelEdit}
-                  className="h-7 w-7 cursor-pointer rounded bg-gray-200 p-[7px] text-violet-500 transition-all hover:bg-violet-500 hover:text-white"
+                  className="h-7 w-7 cursor-pointer rounded bg-gray-200 p-[7px] text-violet-500 transition-all hover:bg-violet-500 hover:text-white sm:h-8 sm:w-8"
                 />
               </div>
             </>
@@ -116,11 +116,11 @@ function TaskItem({ cd, title, category, status, desc }: TaskItemProps) {
               <div className="flex gap-2">
                 <Pencil
                   onClick={editTask}
-                  className="h-7 w-7 cursor-pointer rounded bg-gray-200 p-[7px] text-gray-500 transition-all hover:bg-gray-400 hover:text-white"
+                  className="h-7 w-7 cursor-pointer rounded bg-gray-200 p-[7px] text-gray-500 transition-all hover:bg-gray-400 hover:text-white sm:h-8 sm:w-8"
                 />
                 <Trash
                   onClick={() => dispatch(removeTask(cd))}
-                  className="h-7 w-7 cursor-pointer rounded bg-gray-200 p-[7px] text-violet-500 transition-all hover:bg-violet-500 hover:text-white"
+                  className="h-7 w-7 cursor-pointer rounded bg-gray-200 p-[7px] text-violet-500 transition-all hover:bg-violet-500 hover:text-white sm:h-8 sm:w-8"
                 />
               </div>
             </>

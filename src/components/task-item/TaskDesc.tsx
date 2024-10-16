@@ -12,7 +12,7 @@ function TaskDesc({ disabled, value, attributes, onChange }: TaskDescProps) {
         disabled={disabled}
         value={value}
         onChange={onChange}
-        className={`mt-3 w-full resize-none bg-transparent text-xs text-gray-700 ${attributes}`}
+        className={`mt-3 h-4 w-full resize-none bg-transparent text-xs text-gray-700 sm:h-5 sm:text-sm ${attributes}`}
       ></textarea>
     </>
   );

@@ -18,7 +18,7 @@ function TaskTitle({ onClick, title, icon, attribute }: TaskTitleProps) {
       >
         <IconTag icon={icon} color="text-gray-400" />
         <h2
-          className={`select-none text-2xl font-bold text-violet-500 ${attribute}`}
+          className={`select-none text-2xl font-bold text-violet-500 sm:text-3xl ${attribute}`}
         >
           {title}
         </h2>

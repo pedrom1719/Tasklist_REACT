@@ -49,7 +49,7 @@ function TagsList({ categ, icon, color }: TagsListProps) {
 
   return (
     <>
-      <li className="flex items-center gap-1 rounded-full bg-white pb-1 pl-1 pr-2 pt-[2px] text-[10px] text-gray-600">
+      <li className="flex items-center gap-1 rounded-full bg-white pb-1 pl-1 pr-2 pt-[2px] text-[10px] text-gray-600 sm:text-[14px]">
         <IconTag
           icon={selectedIcon}
           color={`h-4 w-4 mb-[-1px] ${selectedColor}`}
